@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title style="color: #00CCCC;">Portfolio Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center sticky-top" style="
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 15px 0; /* Padding for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center" style="
+            text-decoration: none; /* Remove underline */
+            color: #ECF0F1; /* Text color */
+            font-family: 'Montserrat', sans-serif; /* Consistent font */
+            font-size: 24px; /* Adjust font size */
+            font-weight: 700; /* Bold text */
+        ">
+            <h1 class="sitename" style="margin: 0;">Dharun Kumar</h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
+            <ul class="d-flex align-items-center justify-content-center" style="
+                list-style: none; /* Remove default list styling */
+                margin: 0; /* Remove default margin */
+                padding: 0; /* Remove default padding */
+            ">
+                <li style="margin: 0 15px;"><a href="#hero" style="
+                    color: #ECF0F1; /* Text color */
+                    font-weight: bold; /* Bold text */
+                    text-decoration: none; /* Remove underline */
+                    transition: color 0.3s; /* Smooth transition */
+                ">Home</a></li>
+                <li style="margin: 0 15px;"><a href="#About" style="
+                    color: #ECF0F1; /* Text color */
+                    font-weight: bold; /* Bold text */
+                    text-decoration: none; /* Remove underline */
+                    transition: color 0.3s; /* Smooth transition */
+                ">About</a></li>
+                <li style="margin: 0 15px;"><a href="#Education" style="
+                    color: #ECF0F1; /* Text color */
+                    font-weight: bold; /* Bold text */
+                    text-decoration: none; /* Remove underline */
+                    transition: color 0.3s; /* Smooth transition */
+                ">Education</a></li>
+                <li style="margin: 0 15px;"><a href="#Experiences" style="
+                    color: #ECF0F1; /* Text color */
+                    font-weight: bold; /* Bold text */
+                    text-decoration: none; /* Remove underline */
+                    transition: color 0.3s; /* Smooth transition */
+                ">Experiences</a></li>
+                <li style="margin: 0 15px;"><a href="#Projects" style="
+                    color: #ECF0F1; /* Text color */
+                    font-weight: bold; /* Bold text */
+                    text-decoration: none; /* Remove underline */
+                    transition: color 0.3s; /* Smooth transition */
+                ">Projects</a></li>
+                <li style="margin: 0 15px;"><a href="#Certifications" style="
+                    color: #ECF0F1; /* Text color */
+                    font-weight: bold; /* Bold text */
+                    text-decoration: none; /* Remove underline */
+                    transition: color 0.3s; /* Smooth transition */
+                ">Certifications</a></li>
+                <li style="margin: 0 15px;"><a href="#contact" style="
+                    color: #ECF0F1; /* Text color */
+                    font-weight: bold; /* Bold text */
+                    text-decoration: none; /* Remove underline */
+                    transition: color 0.3s; /* Smooth transition */
+                ">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  
+
+  <main class="main">
+
+   <!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+  <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+      <h2 style="
+          color: #ECF0F1;
+          font-size: 48px;
+          font-weight: 700;
+          font-family: 'Montserrat', sans-serif;
+          text-shadow: 
+              1px 1px 2px rgba(0, 0, 0, 0.8), 
+              0 0 25px rgba(0, 0, 0, 0.5), 
+              0 0 5px rgba(0, 0, 0, 0.5);
+          ">
+          I am Dharun Kumar
+      </h2>
+      <p>
+          <span style="
+              color: #ECF0F1;
+              font-size: 48px;
+              font-weight: 700;
+              font-family: 'Montserrat', sans-serif;
+              text-shadow: 
+                  1px 1px 2px rgba(0, 0, 0, 0.8), 
+                  0 0 15px rgba(0, 0, 0, 0.5), 
+                  0 0 5px rgba(0, 0, 0, 0.5);
+              " 
+              class="typed" 
+              data-typed-items="Roboticist, AI enthusiast">
+          </span>
+      </p>
+  </div>
+</section><!-- /Hero Section -->
+
+<!-- About Section -->
+<section id="About" class="about section" style="
+    background: linear-gradient(135deg, #2b2b2b 0%, #343434 100%); /* Gradient background */
+    padding: 60px 0; /* Add vertical padding */
+">
+    <div class="container" data-aos="fade-up" data-aos-delay="100" style="
+        background: #1e1e1e; /* Dark background for container */
+        padding: 40px;
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
+    ">
+        <div class="row gy-4">
+            <div class="col-md-6">
+                <div class="row justify-content-between gy-4">
+                    <div class="col-lg-5">
+                        <img src="assets/img/profile-img.jpg" class="img-fluid rounded-circle" alt="" style="
+                            border: 4px solid #FFC107; /* Border color and thickness */
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for image */
+                        ">
+                    </div>
+                    <div class="col-lg-7 about-info">
+                        <p style="color: #FFC107; font-weight: bold; font-family: 'Montserrat', sans-serif;"><strong>Name: </strong> <span style="color: #ECF0F1">Dharun Kumar</span></p>
+                        <p style="color: #FFC107; font-weight: bold; font-family: 'Montserrat', sans-serif;"><strong>Profile: </strong> <span style="color: #ECF0F1">Robotics and AI Enthusiast</span></p>
+                        <p style="color: #FFC107; font-weight: bold; font-family: 'Montserrat', sans-serif;"><strong>Email: </strong> <span style="color: #ECF0F1">dharun.official.01@gmail.com</span></p>
+                        <p style="color: #FFC107; font-weight: bold; font-family: 'Montserrat', sans-serif;"><strong>Phone: </strong> <span style="color: #ECF0F1">(+91) 7708187854</span></p>
+                        <p style="color: #FFC107; font-weight: bold; font-family: 'Montserrat', sans-serif;"><strong>Profile: </strong>
+                            <a href="https://github.com/Dharun235" target="_blank" style="
+                                color: #FFC107;
+                                font-weight: bold;
+                                text-decoration: none;
+                                transition: color 0.3s;
+                            "><img src="assets/img/icons8-github-24.png" alt="GitHub Logo" style="width:24px; height:24px; margin-right: 10px;"></a>
+                            <a href="https://linkedin.com/in/dharun-kumar20/" target="_blank" style="
+                                color: #FFC107;
+                                font-weight: bold;
+                                text-decoration: none;
+                                transition: color 0.3s;
+                            "><img src="assets/img/icons8-linkedin-48.png" alt="LinkedIn Logo" style="width:24px; height:24px;"></a>
+                        </p>
+                        <p><a href="assets/Dharun resume !.pdf" class="btn btn-primary" style="
+                            background-color: #FFC107;
+                            border: none;
+                            color: #1e1e1e;
+                            font-weight: bold;
+                            transition: background-color 0.3s;
+                        " download>Download My Resume</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="about-me">
+                    <h4 style="color: #FFC107; font-family: 'Montserrat', sans-serif;font-weight: 700">About me</h4>
+                    <p style="color: #ECF0F1; font-family: 'Montserrat', sans-serif;">
+                        I love to solve problems using robotics and AI. I am a prospective student of 
+                        MSc in Systems, Controls and Mechatronics at Chalmers Tekniska Hogskola, Sweden and 
+                        have recently finished my Bachelor of Technology (BTech) in Electronics and Communication
+                        at Amrita School of Engineering, Coimbatore. I have also completed an 
+                        Advanced Diploma in Industrial Robotics Training (ADIRT) on Yaskava Industrial Robots at
+                        Axis Global Institute of Industrial Training (AGIIT).
+                    </p>
+                    <p style="color: #ECF0F1; font-family: 'Montserrat', sans-serif;">
+                        Other than academics, I am currently learning guitar, and also have 
+                        a passion for agriculture and gardening. I love to keep myself active through
+                        yoga and calisthenics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="Education" class="education section" style="
+    background: linear-gradient(135deg, #2b2b2b 0%, #343434 100%); /* Gradient background */
+    padding: 60px 0; /* Add vertical padding */
+">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <h2 style="color: #FFC107; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 36px; font-weight: 700; ">Education</h2>
+        <p style="color: #ECF0F1; text-align: center; font-family: 'Montserrat', sans-serif;font-size: 24px;font-weight: 700;">My Master's and Bachelor's Education</p>
+
+        <div class="row gy-4">
+
+            <!-- First School Container -->
+            <div class="col-md-6">
+                <div style="
+                    background-color: #1e1e1e; 
+                    padding: 20px; 
+                    border-radius: 12px; 
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+                    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+                " class="education-card">
+                    <div style="overflow: hidden; position: relative;">
+                        <img src="assets/img/chalmers sweden.jpg" class="img-fluid rounded" alt="Chalmers Tekniska Hogskola" style="
+                            border-radius: 8px; 
+                            transition: transform 0.3s ease-in-out; /* Zoom effect */
+                        ">
+                    </div>
+                    <h4 style="color: #FFC107; text-align: center; font-family: 'Montserrat', sans-serif; margin-top: 20px;">Chalmers Tekniska Hogskola</h4>
+                    <p style="color: #ECF0F1; text-align: center; font-family: 'Montserrat', sans-serif;">Gothenburg, Sweden</p>
+                    <p style="color: #FFC107; font-family: 'Montserrat', sans-serif;"><strong>MSc in Systems, Control and Mechatronics</strong> <br> GPA: (not yet released)</p>
+                    <p style="color: #ECF0F1; font-family: 'Montserrat', sans-serif;"><strong>Sept 2024 - Aug 2026</strong></p>
+                    <p style="color: #FFC107; font-family: 'Montserrat', sans-serif;"><strong>Focused on:</strong></p>
+                    <ul>
+                        <li style="color: #ECF0F1;">Autonomous systems track</li>
+                        <li style="color: #ECF0F1;">Modelling and simulation</li>
+                        <li style="color: #ECF0F1;">Discrete event systems</li>
+                        <li style="color: #ECF0F1;">Model based development of cyber physical systems</li>
+                        <li style="color: #ECF0F1;">Linear control system design</li>
+                        <li style="color: #ECF0F1;">Robust and non linear control</li>
+                        <li style="color: #ECF0F1;">Model Predictive control</li>
+                        <li style="color: #ECF0F1;">Design Project (yet to be decided)</li>
+                    </ul>
+                    <p style="color: #FFC107; font-family: 'Montserrat', sans-serif;"><strong>Master thesis:</strong> <span style="color: #ECF0F1;">Not yet decided</span></p>
+                    <p style="color: #FFC107; font-family: 'Montserrat', sans-serif;"><strong>Supervisor:</strong> <span style="color: #ECF0F1;">Not yet decided</span></p>
+                </div>
+            </div>
+
+            <!-- Second School Container -->
+            <div class="col-md-6">
+                <div style="
+                    background-color: #1e1e1e; 
+                    padding: 20px; 
+                    border-radius: 12px; 
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+                    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+                " class="education-card">
+                    <div style="overflow: hidden; position: relative;">
+                        <img src="assets/img/amrita-university-coimbatore-campus.jpg" class="img-fluid rounded" alt="Amrita School of Engineering" style="
+                            border-radius: 8px; 
+                            transition: transform 0.3s ease-in-out; /* Zoom effect */
+                        ">
+                    </div>
+                    <h4 style="color: #FFC107; text-align: center; font-family: 'Montserrat', sans-serif; margin-top: 20px;">Amrita School of Engineering, Coimbatore</h4>
+                    <p style="color: #ECF0F1; text-align: center; font-family: 'Montserrat', sans-serif;">Coimbatore, India</p>
+                    <p style="color: #FFC107; font-family: 'Montserrat', sans-serif;"><strong>Bachelor of Technology - Electronics and Communication Engineering</strong> <br> CGPA: 7.97/10</p>
+                    <p style="color: #ECF0F1; font-family: 'Montserrat', sans-serif;"><strong>June 2020 - June 2024</strong></p>
+                    <p style="color: #FFC107; font-family: 'Montserrat', sans-serif;"><strong>Focused on:</strong></p>
+                    <ul>
+                        <li style="color: #ECF0F1;">Engineering Mathematics</li>
+                        <li style="color: #ECF0F1;">Deep Learning for Computer Vision</li>
+                        <li style="color: #ECF0F1;">Control Systems</li>
+                        <li style="color: #ECF0F1;">Industrial Robotics</li>
+                        <li style="color: #ECF0F1;">Microprocessors and Microcontrollers</li>
+                        <li style="color: #ECF0F1;">FPGA-based System Design</li>
+                        <li style="color: #ECF0F1;">Computer Networks</li>
+                        <li style="color: #ECF0F1;">Hyperspectral Image Analysis</li>
+                    </ul>
+                    <p style="color: #FFC107; font-family: 'Montserrat', sans-serif;"><strong>Dissertation:</strong> <span style="color: #ECF0F1;">Machine Learning Enhanced Smart Wearable for Speech Impaired Individuals</span></p>
+                    <p style="color: #FFC107; font-family: 'Montserrat', sans-serif;"><strong>Supervisor:</strong> <span style="color: #ECF0F1;">Assistant Professor (Sr. Gr) Harikumar M. E</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section><!-- /Education Section -->
+<!-- Container for Experiences Section -->
+<section id="Experiences" class="experiences section" style="padding: 20px; background-color: #343434;">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+    <h2 style="color: #FFC107; text-align: center; font-size: 36px; font-weight: 700;">Experiences</h2>
+    <p style="color: #ECF0F1; text-align: center; font-size: 24px; font-weight: 700;">Professional Experience and Internships</p>
+
+    <div class="row gy-4">
+
+      <!-- Experience 1 Container -->
+      <div class="col-md-6">
+        <div class="experience-card">
+          <img src="assets/img/nit_patna.jpeg" class="experience-image" alt="Robotics Intern Image">
+          <h4 class="experience-title">Robotics Intern</h4>
+          <p class="experience-description">Working on Smorphi, a fully reconfigurable robot.</p>
+          <p class="experience-supervisor"><strong>Supervisor:</strong> <span class="supervisor-name">Dr Gagan Deep Meena</span></p>
+        </div>
+      </div>
+      
+      <!-- Experience 2 Container -->
+      <div class="col-md-6">
+        <div class="experience-card">
+          <img src="assets/img/BHARATFIH_logo.jpeg" class="experience-image" alt="Bharat FIH Image">
+          <h4 class="experience-title">Robotics Intern</h4>
+          <p class="experience-description">1. Designed jigs and 3D printed them.</p>
+          <p class="experience-description">2. Programmed AMR robot for navigation through PCB manufacturing unit using ROS and C++.</p>
+          <p class="experience-supervisor"><strong>Supervisor:</strong> <span class="supervisor-name">Gomathi Selvam, Project Lead at Bharat FIH</span></p>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+</section><!-- /Experiences Section -->
+
+
+<!-- Container for Projects Section -->
+<section id="Projects" class="projects section" style="padding: 20px; color: #ECF0F1; background-color: #343434;">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <h2 style="color: #FFC107; text-align: center; font-weight: bold; font-size: 36px;">Projects</h2>
+    <p style="color: #ECF0F1; text-align: center; font-weight: bold; font-size: 24px;">A showcase of my work and contributions</p>
+
+    <div class="row gy-4">
+
+      <!-- Project 1 Container -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="assets/img/project-1.jpg" class="project-image" alt="Project 1 Image">
+          <div class="project-overlay">
+            <a href="https://github.com/Dharun235/Smart-glove-for-speech-impaired" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h4>(SHWASI) Smart Hand Wearable Aid for Speech Impaired</h4>
+          <p>Skills: Machine Learning algorithms and Python</p>
+        </div>
+      </div>
+
+      <!-- Project 2 Container -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="assets/img/project2.jpg" class="project-image" alt="Project 2 Image">
+          <div class="project-overlay">
+            <a href="https://github.com/Dharun235/UAV-navigation-using-Q-learning-and-pid" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h4>UAV navigation using Q-learning and PID</h4>
+          <p>Skills: Python, Machine Learning</p>
+        </div>
+      </div>
+
+      <!-- Project 3 Container -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="assets/img/project3.jpg" class="project-image" alt="Project 3 Image">
+          <div class="project-overlay">
+            <a href="https://github.com/Dharun235/MPC-based-obstacle-avoidance-system" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h4>MPC based Obstacle Avoidance System</h4>
+          <p>Skills: MATLAB</p>
+        </div>
+      </div>
+
+      <!-- Project 4 Container -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="assets/img/project4.jpg" class="project-image" alt="Project 4 Image">
+          <div class="project-overlay">
+            <a href="https://github.com/Dharun235/Essenz-student" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h4>Essenz Student: A Website Leveraging LLMs for Enhancing Student Studies</h4>
+          <p>Skills: Python</p>
+        </div>
+      </div>
+
+      <!-- Project 5 Container -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="assets/img/project5.jpg" class="project-image" alt="Project 5 Image">
+          <div class="project-overlay">
+            <a href="https://github.com/Dharun235/Autonomous-drone-navigation-and-object-recognition" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h4>ROS2 Based Autonomous Drone Navigation and Fruits Detection</h4>
+          <p>Skills: ROS2, C++</p>
+        </div>
+      </div>
+
+      <!-- Project 6 Container -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="assets/img/project6.jpg" class="project-image" alt="Project 6 Image">
+          <div class="project-overlay">
+            <a href="https://github.com/Dharun235/Motion-planning-and-decision-making-for-autonomous-vehicles" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h4>Motion Planning and Decision Making for Autonomous Vehicles</h4>
+          <p>Skills: C++, PCL, OpenCV, Eigen Library for C++, Python3, ROS</p>
+        </div>
+      </div>
+
+      <!-- Project 7 Container -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="assets/img/project7.jpg" class="project-image" alt="Project 7 Image">
+          <div class="project-overlay">
+            <a href="https://github.com/Dharun235/sensor-fusion-and-non-linear-filtering-project" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h4>Sensor Fusion and Non-linear Filtering</h4>
+          <p>Skills: Python, PCL, TensorFlow API</p>
+        </div>
+      </div>
+
+      <!-- Project 8 Container -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="assets/img/project8.jpg" class="project-image" alt="Project 8 Image">
+          <div class="project-overlay">
+            <a href="https://github.com/Dharun235/Control-and-trajectory-tracking-for-autonomous-vehicles" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h4>PID Based Control and Trajectory Tracking for Autonomous Vehicles</h4>
+          <p>Skills: C++, PCL, OpenCV, Eigen Library for C++, Python3, ROS</p>
+        </div>
+      </div>
+
+      <!-- Project 9 Container -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="assets/img/project9.jpg" class="project-image" alt="Project 9 Image">
+          <div class="project-overlay">
+            <a href="https://github.com/Dharun235/Localisation-using-NDT" target="_blank" class="github-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <h4>NDT Based Scan Matching Localisation in Carla</h4>
+          <p>Skills: C++, PCL, OpenCV, Eigen Library for C++, Python3, ROS</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Projects Section -->
+
+<!-- Container for Certifications Section -->
+<section id="Certifications" class="certifications section" style="padding: 20px; color: #ECF0F1; background-color: #343434;">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <h2 style="color: #FFC107; text-align: center; font-weight: bold; font-size: 36px;">Certifications</h2>
+    <p style="color: #ECF0F1; text-align: center; font-weight: bold; font-size: 24px;">A showcase of my professional certifications</p>
+
+    <div class="row gy-4">
+
+      <!-- Certification 1 Container -->
+      <div class="col-md-4">
+        <div class="certification-card">
+          <img src="assets/img/certificate1.png" class="certification-image" alt="Certification 1 Image">
+          <div class="certification-overlay">
+            <a href="https://linktocertification.com" target="_blank" class="certification-link">
+              <i class="fas fa-certificate"></i>
+            </a>
+          </div>
+          <h4>Self Driving Car Engineer Nanodegree - Udacity</h4>
+          <p>Skills: C++ · Python · ROS · TensorFlow · Keras · AWS · Computer Vision · LiDAR</p>
+        </div>
+      </div>
+
+      <!-- Certification 2 Container -->
+      <div class="col-md-4">
+        <div class="certification-card">
+          <img src="assets/img/certificate2.jpg" class="certification-image" alt="Certification 2 Image">
+          <div class="certification-overlay">
+            <a href="https://www.linkedin.com/in/dharun-kumar20/overlay/certifications/1321831469/multiple-media-viewer?profileId=ACoAADl_rWgBLUovrhLdEm65BQQZ1st7tmNgcZA&treasuryMediaId=1720500866397&type=IMAGE&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B2nswcP9MThCz03pp22Tq4w%3D%3D" target="_blank" class="certification-link">
+              <i class="fas fa-certificate"></i>
+            </a>
+          </div>
+          <h4>Geospatial Practices for Engineers and Advanced Data Acquisition and Mapping - LnT Edutech</h4>
+        </div>
+      </div>
+
+      <!-- Certification 3 Container -->
+      <div class="col-md-4">
+        <div class="certification-card">
+          <img src="assets/img/certificate3.jpg" class="certification-image" alt="Certification 3 Image">
+          <div class="certification-overlay">
+            <a href="https://www.linkedin.com/in/dharun-kumar20/details/certifications/1715856759591/single-media-viewer?type=IMAGE&profileId=ACoAADl_rWgBLUovrhLdEm65BQQZ1st7tmNgcZA&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BvksOxxN%2FRLSpRI6AIofBTA%3D%3D" target="_blank" class="certification-link">
+              <i class="fas fa-certificate"></i>
+            </a>
+          </div>
+          <h4>Advanced Diploma in Industrial Robotics Training (ADIRT) on Yaskava Industrial Robot - AGIIT</h4>
+          <p>Skills: Robot Programming</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Certifications Section -->
+
+  <!-- Contact Section -->
+  <section id="Contact" class="contact section dark-background">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <h2>Contact Me</h2>
+      <p>Get in Touch</p>
+      
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+    </div>
+  </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 Dharun Kumar. All Rights Reserved.
+      </div>
+    </div>
+  </footer><!-- /Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

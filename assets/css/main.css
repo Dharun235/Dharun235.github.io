@@ -1,0 +1,407 @@
+/* CSS Variables for maintainability */
+:root {
+  --primary-color: #00FFFF;
+  --secondary-color: #ECF0F1;
+  --background-color: #000;
+  --header-background: #000;
+  --contact-background: #000;
+  --contact-title: #F56C0C;
+  --hero-text-color: #ECF0F1;
+}
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--hero-text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--header-background);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sitename {
+  color: #FFFFFF; /* White color */
+  font-weight: bold; /* Bold text */
+  font-size: 1.5em;
+  margin-right: 50px; /* Space between logo and nav */
+}
+
+.navmenu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* Evenly space the nav items */
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+}
+.education-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.education-card img:hover {
+  transform: scale(1.1); /* Zoom effect for images on hover */
+}
+/* In styles.css or within <style> tag *//* Styling for the experience section */
+.experience-card {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Initial shadow */
+}
+
+/* Ensure all images within experience cards are consistent */
+.experience-image {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Title styling for experience cards */
+.experience-title {
+  color: #FFC107;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Description text styling */
+.experience-description {
+  color: #ECF0F1;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Supervisor text styling */
+.experience-supervisor {
+  color: #FFC107;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Supervisor name color */
+.supervisor-name {
+  color: #ECF0F1;
+}
+
+/* Hover effect for experience cards */
+.experience-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+/* Ensure all project cards have a consistent shape */
+.project-card {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px; /* Uniform border radius */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Initial shadow */
+  width: 100%; /* Ensure it takes full width of its container */
+  max-width: 350px; /* Max width for uniform sizing */
+  margin: auto; /* Center the card */
+}
+
+/* Ensure all images within project cards have a consistent shape */
+.project-image {
+  width: 100%; /* Make image fit within the card */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensure image covers the area */
+  border-radius: 8px; /* Same border radius as card */
+  transition: transform 0.3s ease;
+}
+
+/* Project card hover effects */
+.project-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay background */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.github-link {
+  color: #FFC107;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #FFD54F; /* Lighter yellow on hover */
+}
+
+/* Styling for project titles and descriptions */
+.project-card h4 {
+  color: #FFC107; /* Title color */
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.project-card p {
+  color: #ECF0F1; /* Description color */
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* Ensure all certification cards have a consistent shape */
+.certification-card {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px; /* Uniform border radius */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Initial shadow */
+  width: 100%; /* Ensure it takes full width of its container */
+  max-width: 350px; /* Max width for uniform sizing */
+  margin: auto; /* Center the card */
+}
+
+/* Ensure all images within certification cards have a consistent shape */
+.certification-image {
+  width: 100%; /* Make image fit within the card */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensure image covers the area */
+  border-radius: 8px; /* Same border radius as card */
+  transition: transform 0.3s ease;
+}
+
+/* Certification card hover effects */
+.certification-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.certification-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay background */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.certification-card:hover .certification-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.certification-link {
+  color: #FFC107;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.certification-link i {
+  transition: color 0.3s ease;
+}
+
+.certification-link:hover i {
+  color: #FFD700; /* Change icon color on hover */
+}
+
+
+.navmenu ul li {
+  display: inline;
+}
+
+.navmenu ul li a {
+  color: var(--hero-text-color); /* Default link color */
+  text-decoration: none; /* Remove underline */
+  padding: 0 10px; /* Add padding for more clickable area */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navmenu ul li a.active {
+  color: #FFFFFF; /* Override the color for the active link */
+}
+
+.navmenu ul li a:hover {
+  color: var(--primary-color); /* Highlight color on hover */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../img/hero-img.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .container {
+  text-align: center;
+  color: var(--hero-text-color);
+  z-index: 1; /* Ensures the text is above the image */
+}
+
+.hero h2 {
+  color: var(--primary-color);
+  font-size: clamp(2em, 5vw, 3em); /* Responsive font size */
+  margin: 0;
+}
+
+.hero p .typed {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: clamp(1.2em, 4vw, 1.5em); /* Responsive font size */
+}
+
+/* Ensure the image in the hero section does not overflow */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Inherit background from the hero class */
+  z-index: -1; /* Place it behind the content */
+}
+
+/* Uniformity and Centering for other sections */
+.about, .education {
+  padding: 60px 15px;
+  text-align: center;
+}
+
+.about h4, .education h2 {
+  color: var(--primary-color);
+}
+
+.about p, .education p {
+  color: var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  list-style: square;
+  color: var(--secondary-color);
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 15px;
+  background-color: var(--contact-background);
+}
+
+.contact h2 {
+  color: var(--contact-title); /* Orange color for the title */
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: var(--secondary-color); /* Light blue color for the text */
+  margin-bottom: 30px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 20px; /* Adjust the space between icons */
+  margin-top: 20px; /* Space above the icons section */
+}
+
+.contact-icons a {
+  color: var(--hero-text-color); /* Icon color */
+  font-size: 2.5em; /* Adjust size as needed */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.contact-icons a:hover {
+  color: var(--primary-color); /* Color on hover */
+}
+
+/* Font Awesome Icons */
+.fab, .fas {
+  font-size: 2.5em; /* Adjust size for larger icons */
+}
+
+/* Media Queries */
+@media (max-width: 992px) { /* Adjust for medium devices */
+  .hero h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+
+  .navmenu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h2 {
+    font-size: 1.8em;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+  }
+}
