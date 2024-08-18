@@ -40,15 +40,96 @@ body {
   align-items: center;
   gap: 20px;
   padding: 0;
+}/* Styling for the education section */
+.education-card {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Initial shadow */
 }
+
+/* Ensure all images within education cards are consistent */
+.education-image {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Title styling for education cards */
+.education-title {
+  color: #FFC107;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Location text styling */
+.education-location {
+  color: #ECF0F1;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Degree text styling */
+.education-degree {
+  color: #FFC107;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Date text styling */
+.education-date {
+  color: #ECF0F1;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Focus area text styling */
+.education-focus {
+  color: #FFC107;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* List styling for focus areas */
+.education-focus-list {
+  color: #ECF0F1;
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Thesis text styling */
+.education-thesis {
+  color: #FFC107;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Supervisor text styling */
+.education-supervisor {
+  color: #FFC107;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Supervisor name color */
+.education-supervisor span {
+  color: #ECF0F1;
+}
+
+/* Hover effect for education cards */
 .education-card:hover {
   transform: scale(1.05); /* Zoom effect on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
 }
 
-.education-card img:hover {
-  transform: scale(1.1); /* Zoom effect for images on hover */
-}
 /* In styles.css or within <style> tag *//* Styling for the experience section */
 .experience-card {
   background-color: #000000;
